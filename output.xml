@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-16T00:22:03.565320" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\nitku\PycharmProjects\WebAutomationRobot\Testcases\test1.robot">
+<test id="s1-t1" name="LoginTest" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-16T00:22:03.798182" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-16T00:22:03.797979" elapsed="3.654285"/>
+</kw>
+<kw name="loginToApplication">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-01-16T00:22:07.453827" level="INFO">Clicking link 'xpath://a[normalize-space()='Log in']'.</msg>
+<arg>xpath://a[normalize-space()='Log in']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-16T00:22:07.453515" elapsed="0.454195"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-16T00:22:07.908021" level="INFO">Typing text 'nitkum836@gmail.com' into text field 'id:Email'.</msg>
+<msg time="2025-01-16T00:22:08.032163" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-16T00:22:08.032407" level="FAIL">Element with locator 'id:Email' not found.</msg>
+<arg>id:Email</arg>
+<arg>nitkum836@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-16T00:22:07.907871" elapsed="0.126855">Element with locator 'id:Email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-16T00:22:08.034894" elapsed="0.000030"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath: //button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-16T00:22:08.034992" elapsed="0.000016"/>
+</kw>
+<status status="FAIL" start="2025-01-16T00:22:07.453026" elapsed="0.582095">Element with locator 'id:Email' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-16T00:22:08.035684" elapsed="0.000048"/>
+</kw>
+<status status="FAIL" start="2025-01-16T00:22:03.797150" elapsed="4.238946">Element with locator 'id:Email' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-16T00:22:03.566308" elapsed="4.471598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test1" id="s1" pass="0" fail="1" skip="0">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
